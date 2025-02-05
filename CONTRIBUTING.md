@@ -1,46 +1,65 @@
-# CONTRIBUTING.md
+# Guía de Contribución a 'Propuestas Tlilapan' 🚀
 
-## Bienvenido a 'Impulsa Web' 🌌
+¡Bienvenido! Estamos encantados de que quieras contribuir a **'Propuestas Tlilapan'**, la plataforma donde presentamos nuestras iniciativas y planes de acción. Este documento te guiará paso a paso en cómo aportar al proyecto.
 
-¡Estamos encantados de que estés interesado en contribuir a nuestro proyecto de comunidad estudiantil! Este documento te guiará a través de los pasos necesarios para aportar tu valioso trabajo a 'CAMPTII V5.0 Landin Page', un proyecto desarrollado con Astro. Queremos hacer de este proceso algo sencillo y transparente, así que aquí tienes una guía paso a paso.
+## 📌 ¿De qué trata este proyecto?
+Este repositorio aloja la landing page de propuestas de **Jesús Alberto Rodríguez Puertos**, precandidato a la alcaldía de Tlilapan por **Movimiento Ciudadano**. La web está desarrollada con **Astro JS**, asegurando un diseño moderno, rápido y accesible.
 
-### Primeros pasos 🚀
+---
 
-1. **Familiarízate con Astro JS**: Si aún no lo has hecho, asegúrate de entender cómo funciona Astro JS. Puedes encontrar mucha información útil en [la documentación oficial de Astro](https://docs.astro.build).
+## 🛠 Cómo contribuir
 
-2. **Configura tu entorno de desarrollo**: Recomendamos utilizar `npm` como gestor de paquetes por su eficiencia. Si no tienes `npm` instalado, puedes hacerlo ejecutando `npm install npm@latest -g o instalando Node.js`.
+### 1️⃣ **Configura tu entorno**
+- **Clona el repositorio**:
+  ```sh
+  git clone https://github.com/Jesus-Puertos/propuestas-landing-page.git
+  cd propuestas-landing-page
+  ```
+- **Instala las dependencias**:
+  ```sh
+  npm install
+  ```
+- **Ejecuta el entorno de desarrollo**:
+  ```sh
+  npm run dev
+  ```
 
-### Cómo contribuir 🛠
+---
 
-#### 1. Configura tu entorno
+### 2️⃣ **Realiza tu contribución**
+1. **Crea una nueva rama** antes de hacer cambios:
+   ```sh
+   git checkout -b feature/nombre-de-tu-mejora
+   ```
+2. **Desarrolla y prueba tus cambios** con `npm run dev`.
+3. **Asegúrate de seguir la estructura del proyecto** para mantener la coherencia.
 
-- **Clona el repositorio**: Clona el repositorio original a tu máquina local. Para hacerlo, copia la URL del repositorio haciendo clic en el botón verde "Code" y luego ejecuta `git clone <URL del repositorio original>` en tu terminal.
+---
 
-- **Instala las dependencias**: Navega hasta el directorio del proyecto clonado y ejecuta `npm install` para instalar todas las dependencias necesarias.
+### 3️⃣ **Envía tus cambios**
+1. **Añade los cambios**:
+   ```sh
+   git add .
+   ```
+2. **Realiza un commit claro y descriptivo**:
+   ```sh
+   git commit -m "Agregado: Nueva sección para propuestas sociales"
+   ```
+3. **Sube tu rama**:
+   ```sh
+   git push origin feature/nombre-de-tu-mejora
+   ```
+4. **Crea un Pull Request en GitHub** y describe los cambios.
 
-#### 2. Trabaja en tus cambios
+---
 
-- **Crea una nueva rama**: Antes de empezar a trabajar en tus cambios, crea una nueva rama utilizando `git checkout -b nombre-de-tu-rama`.
-- **Desarrolla tus cambios**: Implementa tus cambios o mejoras en tu rama local. Asegúrate de seguir las prácticas y estándares de código del proyecto.
-- **Prueba tus cambios**: Ejecuta `npm run dev` para iniciar el servidor de desarrollo de Astro y revisa tus cambios en el navegador.
+## 📢 Buenas prácticas
+✔ **Revisa los PRs abiertos** antes de trabajar en algo nuevo.  
+✔ **Sigue la estructura de código existente** para mantener la calidad.  
+✔ **Explica bien los cambios en cada PR**.  
 
-#### 3. Envía tus cambios
+Si tienes dudas, ¡pregunta en los Issues! 🤍💡
 
-- **Añade tus cambios en tu rama local**: Una vez estés satisfecho con tus cambios, agregalos con `git add .`.
-- **Commit de tus cambios**: Haz commit de tus cambios con un mensaje claro y descriptivo utilizando `git commit -m 'Tu mensaje descriptivo'`.
-- **Push a la rama**: Haz push de tu rama con los cambios al repositorio original utilizando `git push origin nombre-de-tu-rama`.
-- **Crea un Pull Request (PR)**: En GitHub, ve al repositorio original de 'Hearping Zongolica' y haz clic en "Pull request" para iniciar uno. Asegúrate de describir claramente qué cambios has realizado y por qué son necesarios o útiles para el proyecto.
+---
 
-### Buenas prácticas 🌟
-
-- **Revisa los PRs abiertos** para asegurarte de que no estás trabajando en algo que ya está en progreso.
-- **Mantén tus commits limpios y descriptivos**.
-- **Sigue las convenciones de código del proyecto**.
-- **Actualiza tu rama con frecuencia** para mantenerla al día con la rama principal del proyecto.
-- **Participa en las discusiones** de tu PR si hay comentarios o sugerencias.
-
-### ¿Necesitas ayuda? 🆘
-
-Si tienes alguna pregunta o necesitas ayuda, no dudes en abrir un "issue" en el repositorio.
-
-¡Gracias por contribuir a 'Impulsa Web'! Juntos estamos construyendo algo increíble. 🚀
+💡 **Gracias por contribuir a 'Propuestas Tlilapan'!** Juntos podemos construir una mejor comunidad. 🚀

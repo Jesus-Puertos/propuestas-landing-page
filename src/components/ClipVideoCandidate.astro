@@ -1,0 +1,31 @@
+---
+import LiteYouTube from "@/components/LiteYoutube.astro"
+import SectionTitle from "./SectionTitle.astro"
+
+interface Props {
+	workout?: {
+		videoID: string
+		thumbnail: string
+		name: string
+	}
+   
+}
+
+
+const { workout = undefined } = Astro.props
+---
+
+{workout && (
+    <section class="mb-10 mt-20 md:my-44">
+      <SectionTitle title="Mensaje de nuestro dirigente nacional" description={`Jorge Alvarez Maynez`} />
+  
+      <div class="mt-10 pt-12">
+        <LiteYouTube
+          videoId={workout.videoID}
+          title={`Reproducir video de ${workout.name}`}
+          backgroundImage={workout.thumbnail}
+        />
+      </div>
+    </section>
+  )}
+  

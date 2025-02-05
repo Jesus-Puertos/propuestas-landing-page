@@ -1,0 +1,169 @@
+{
+  "basics": {
+    "id": "1",
+    "name": "Jesús Alberto Rodríguez Puertos",
+    "label": "Pre candidato a la alcaldía de Tlilapan por Movimiento Ciudadano",
+    "image": "/me.png",
+    "email": "226w0496@zongolica.tecnm.mx",
+    "phone": "+52 272 266-2474",
+    "url": "https://jesus-puertosdev.netlify.app/",
+    "summary": "Desarrollador Web FullStack Jr. con experiencia en tecnologías como React, Astro y Tailwind CSS. Ganador del primer lugar en HackaTECNM 2024 a nivel regional y delegado municipal en Movimiento Ciudadano. Apasionado por crear soluciones tecnológicas prácticas que combinan diseño innovador y funcionalidad.",
+    "location": {
+      "address": "",
+      "postalCode": "95060",
+      "city": "Tlilapan",
+      "countryCode": "MX",
+      "region": "Veracruz"
+    },
+    "workout": {
+      "videoID": "5V_4WLf2xlw",
+      "thumbnail": "/img/candidates/thumbails/maynez.jpg",
+      "name": "Jesús Rodríguez"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Jesús Rodríguez",
+        "url": "https://www.linkedin.com/in/jesús-puertos-mx/"
+      },
+      {
+        "network": "GitHub",
+        "username": "jesuspuertos",
+        "url": "https://github.com/jesus-puertos"
+      }
+    ],
+    "leaders":[
+    {
+      "name": "Jorge Alvarez Maynez",
+      "position": "Dirigente Nacional",
+      "url": "https://movimientociudadano.mx/"
+    }
+  ]
+  },
+  "work": [
+    {
+      "name": "InnovaTECNM 2024",
+      "position": "Desarrollador AR",
+      "url": "https://volvoar.dev",
+      "startDate": "2024-11-18",
+      "endDate": "2024-11-22",
+      "summary": "Participé en el desarrollo de una aplicación innovadora de realidad aumentada para manipular modelos 3D en un entorno interactivo, diseñada específicamente para satisfacer las necesidades de Volvo Group S.A de C.V. Este proyecto destacó por su enfoque en la experiencia del usuario y la integración de tecnologías avanzadas de AR.",
+      "highlights": [
+        "Diseño e implementación de un sistema de manipulación 3D que permite la visualización, rotación y expansión de modelos en tiempo real.",
+        "Desarrollo de herramientas para la medición precisa de distancias y dimensiones dentro de entornos inmersivos.",
+        "Colaboración efectiva con un equipo multidisciplinario de desarrolladores, diseñadores y representantes de la industria automotriz.",
+        "Optimización del rendimiento de la aplicación para garantizar una experiencia fluida y sin interrupciones en dispositivos modernos.",
+        "Presentación del proyecto en la fase nacional de InnovaTECNM 2024, destacando por su creatividad y aplicabilidad en el sector automotriz.",
+        "Resolución de problemas técnicos complejos relacionados con la interacción entre modelos 3D y el entorno AR."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Tecnológico Nacional de México, Campus Zongolica",
+      "url": "http://www.tecnm.mx/",
+      "area": "Ingeniería en Sistemas Computacionales",
+      "description": "Estudiante de Ingeniería en Sistemas Computacionales. He desarrollado soluciones como una plataforma integral para actividades complementarias y he participado en competencias tecnológicas, obteniendo reconocimientos destacados como el primer lugar en HackaTECNM 2024.",
+      "studyType": "Bachelor",
+      "startDate": "2020-08-01",
+      "endDate": null,
+      "score": "9.3",
+      "courses": [
+        "Desarrollo Web con React",
+        "Metodologías Ágiles (SCRUM)"
+      ]
+    },
+    {
+      "institution": "Centro Bachillerato Tecnológico Agropecuario No. 280",
+      "url": "http://cbta280.edu.mx/",
+      "area": "Técnico en Ofimática",
+      "description": "Durante mi estancia en el Centro Bachillerato Tecnológico Agropecuario, adquirí conocimientos técnicos en ofimática y mantenimiento de hardware.",
+      "studyType": "High School",
+      "startDate": "2016-08-01",
+      "endDate": "2019-06-01",
+      "score": "9.0",
+      "courses": [
+        "Mantenimiento de hardware",
+        "Programación básica"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Avanzado"
+    },
+    {
+      "name": "CSS",
+      "level": "Avanzado"
+    },
+    {
+      "name": "JavaScript",
+      "level": "Avanzado"
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermedio"
+    },
+    {
+      "name": "React",
+      "level": "Avanzado"
+    },
+    {
+      "name": "Astro",
+      "level": "Avanzado"
+    },
+    {
+      "name": "Node.js",
+      "level": "Intermedio"
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "Avanzado"
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermedio"
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado"
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermedio Avanzado"
+    }
+  ],
+  "projects": [
+    {
+      "name": "BeelTraveler",
+      "isActive": true,
+      "description": "Plataforma digital para conectar agencias de turismo con clientes y guías locales, promoviendo la economía regional.",
+      "highlights": [
+        "Diseñada con Astro, React y MySQL.",
+        "Ganadora del primer lugar en HackaTECNM 2024."
+      ],
+      "url": "https://beeltraveler-repo-tecnm.vercel.app/"
+    },
+    {
+      "name": "Sistema de Gestión de Complementarias",
+      "isActive": true,
+      "description": "Plataforma integral para el registro y consulta de actividades complementarias de los estudiantes, incluyendo horarios, documentación, y progreso académico.",
+      "highlights": [
+        "Implementó medidas avanzadas de seguridad en formularios.",
+        "Facilitó la consulta y gestión de horarios y cargas académicas en tiempo real."
+      ],
+      "github": "https://github.com/Jesus-Puertos/complementarias-proyecto.git"
+    }
+  ]
+}

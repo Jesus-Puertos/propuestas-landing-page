@@ -14,14 +14,14 @@ const normalizedPathName =
 const pages = [
   { name: "Inicio", href: "/" },
   {
-    name: "Sobre nosotros",
-    href: "/about-us",
+    name: "propuestas",
+    href: "/propuestas",
     active: normalizedPathName.startsWith("/propuestas"),
   },
   {
-    name: "Solicita un credito",
-    href: "/request-credit",
-    soonDate: "¡Pide tu credito ahora!",
+    name: "Visita la web oficial",
+    href: "https://movimientociudadano.mx/",
+    soonDate: "¡Unete al movimiento!",
     disabled: true,
     target: "_blank",
   },
@@ -127,9 +127,7 @@ const pages = [
       <div class="focus-within-ring -ml-[8px] -mr-[4px]">
         <a href="/" class="focus-visible:!ring-0">
           <img
-            src="/img/logo-impulsa.png"
-            width={1300}
-            height={1300}
+            src="/img/logo-blanco-movimiento.png"
             alt="Logo impulsa"
             loading="lazy"
           />
@@ -186,6 +184,8 @@ const pages = [
   }
 
   .current-page {
+  color: white ; /* Asegura que el texto sea blanco */
+  background: linear-gradient(to right, rgba(255,255,255,0.2), transparent); 
   }
   .current-page:before {
     view-transition-name: nav-item;
@@ -250,20 +250,23 @@ const pages = [
   }
 
   document.addEventListener("astro:page-load", () => {
-    const nav = $("nav");
-    const menuButton = $("#menuButton");
-    const innerMenuButton = $("#innerMenuButton");
-    const menuMobileContext = $("#menuMobileContent");
+  const nav = document.querySelector("nav");
+  const menuButton = document.getElementById("menuButton");
+  const innerMenuButton = document.getElementById("innerMenuButton");
+  const menuMobileContent = document.getElementById("menuMobileContent");
 
-    menuButton?.addEventListener("hamburgerButtonClicked", () =>
-      toggleMenu(nav, menuMobileContext)
-    );
-    innerMenuButton?.addEventListener("hamburgerButtonClicked", () =>
-      toggleMenu(nav, menuMobileContext)
-    );
+  function toggleMenu() {
+    menuMobileContent?.classList.toggle("open");
+    nav?.classList.toggle("open");
+    document.body.classList.toggle("overflow-hidden");
+  }
 
-    if (menuMobileContext?.classList.contains("open")) {
-      toggleMenu(nav, menuMobileContext);
-    }
-  });
+  menuButton?.addEventListener("click", toggleMenu);
+  innerMenuButton?.addEventListener("click", toggleMenu);
+
+  if (menuMobileContent?.classList.contains("open")) {
+    toggleMenu();
+  }
+});
+
 </script>

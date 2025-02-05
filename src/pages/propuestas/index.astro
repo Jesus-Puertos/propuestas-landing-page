@@ -1,0 +1,16 @@
+---
+import Bento from "@/components/propuestas/Bento.astro";
+import PropuestLayout from "@/layouts/PropuestLayout.astro";
+import { basics } from "@cv"; // ✅ Importando desde el JSON
+
+const { name, label, image, summary, workout, leaders } = basics; 
+
+---
+
+<PropuestLayout title="Propuestas de los candidatos">
+
+    <h1>
+        Propuestas
+    </h1>
+<Bento />
+</PropuestLayout>

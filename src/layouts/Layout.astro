@@ -1,11 +1,21 @@
 ---
 // Supports weights 200-900
 import "@fontsource-variable/nunito";
+import {basics} from '@cv'
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
 interface Props {
   title: string;
 }
 
-const { title } = Astro.props;
+const {title} = Astro.props;
+
+const {image, summary} = basics;
+
+
+
+
 ---
 
 <!doctype html>
@@ -19,17 +29,63 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <Header />
+
+    <div class="mx-auto min-h-screen max-w-6xl px-2 pt-16 selection:bg-primary selection:text-secondary md:pt-20 lg:px-10">
+      <slot />
+      <Footer />
+    </div>
+    
+
   </body>
 </html>
 <style is:global>
   :root {
     color-scheme: light dark;
+    --color-primary: #ff8200;
+    --color-secondary: #f0f1ed;
+    --color-accent: #ff8200;
   }
 
   html {
-    font-family: "Nunito Variable", sans-serif;
+    font-family: "Sharp Grotesk", sans-serif;
     background-size: 224px;
-    background: #582a7c;
+    background: #ff8200;
   }
+
+
+
+  /* BOLD15 */
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('/fonts/SharpGrotesk-Bold15.otf') format('trueType');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('/fonts/SharpGrotesk-BoldItalic15.otf') format('trueType');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('/fonts/SharpGrotesk-Medium20.otf') format('trueType');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Grotesk';
+  src: url('/fonts/SharpGrotesk-SemiBold15.otf') format('trueType');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 </style>

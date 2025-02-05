@@ -1,0 +1,40 @@
+---
+import Typography from "@/components/Typography.astro";
+
+interface Props{
+    readonly name: string;
+
+}
+
+const {name} = Astro.props;
+
+const splitName = name.split(" ") ?? [];
+
+const lastName = splitName[splitName.length - 1] ?? "";
+
+const firstNames = splitName.slice(0, splitName.length - 1).join(" ") ?? "";
+
+---
+
+<Typography 
+as="h4"
+variant="candidate-title"
+color="white"
+class:list={"candidate-title -skew-y-6 text-center"}
+>
+<span>
+    <span>
+        {firstNames?.toLocaleLowerCase()}
+    </span>
+    <span>
+        {lastName?.toLocaleLowerCase()}
+    </span>
+</span>
+
+</Typography>
+
+<style>
+	.candidate-title {
+		text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+	}
+</style>

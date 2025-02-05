@@ -1,0 +1,129 @@
+---
+import BentoItem from "./BentoItem.astro";
+import BoxArrowIcon from "@/components/Icons/BoxArrow.astro";
+
+import { basics } from "@cv";
+const { name } = basics;
+---
+
+<h2
+  class="text-purple-800 text-4xl text-center text-balance uppercase font-bold"
+>
+  ¿Qué propuestas tiene?
+  <span class="dark:text-yellow-200">
+    {name}
+  </span>
+</h2>
+
+<p class="text-lg text-center">
+  Selecciona la categoría y explóralas.
+</p>
+
+
+<section
+  class="
+    w-full max-w-auto mt-0
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  "
+>
+  <BentoItem class="col-span-10 md:col-span-4" title="Impulso Tecnológico">
+    <div slot="image" style="background-image: url('/tecnologia.jpg')"></div>
+    <p slot="content">Digitalización de trámites, acceso a internet y plataformas para emprendedores.</p>
+    <div slot="links">
+      <a href="/tecnologia">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-6" title="Educación y Desarrollo">
+    <div slot="image" style="background-image: url('/educacion.jpg')"></div>
+    <p slot="content">Becas, espacios de estudio y convenios con universidades.</p>
+    <div slot="links">
+      <a href="/educacion">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-6" title="Seguridad Ciudadana">
+    <div slot="image" style="background-image: url('/seguridad.jpg')"></div>
+    <p slot="content">Cámaras de vigilancia, capacitación y mejoras para policías.</p>
+    <div slot="links">
+      <a href="/seguridad">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-4" title="Deporte y Recreación">
+    <div slot="image" style="background-image: url('/deporte.jpg')"></div>
+    <p slot="content">Instalaciones deportivas, eventos y apoyo a atletas.</p>
+    <div slot="links">
+      <a href="/deporte">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-6" title="Espacios Públicos">
+    <div slot="image" style="background-image: url('/espacios-publicos.jpg')"></div>
+    <p slot="content">Restauración y mantenimiento de parques y áreas recreativas.</p>
+    <div slot="links">
+      <a href="/espacios-publicos">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-4" title="Comercio Local">
+    <div slot="image" style="background-image: url('/comercio.jpg')"></div>
+    <p slot="content">Mercado municipal, ferias y financiamiento para emprendedores.</p>
+    <div slot="links">
+      <a href="/comercio">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-10" title="Medio Ambiente">
+    <div slot="image" style="background-image: url('/medio-ambiente.jpg')"></div>
+    <p slot="content">Reforestación, cuidado del río y educación ambiental.</p>
+    <div slot="links">
+      <a href="/medio-ambiente">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-6" title="Infraestructura y Servicios">
+    <div slot="image" style="background-image: url('/infraestructura.jpg')"></div>
+    <p slot="content">Pavimentación, drenaje y agua potable.</p>
+    <div slot="links">
+      <a href="/infraestructura">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-4" title="Gestión de Residuos">
+    <div slot="image" style="background-image: url('/residuos.jpg')"></div>
+    <p slot="content">Sistema de recolección eficiente, reciclaje y manejo sostenible de desechos.</p>
+    <div slot="links">
+      <a href="/residuos">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-10" title="Cultura y Tradiciones">
+    <div slot="image" style="background-image: url('/cultura.jpg')"></div>
+    <p slot="content">Festivales, talleres y apoyo a artistas locales.</p>
+    <div slot="links">
+      <a href="/cultura">
+        <BoxArrowIcon class="size-5" />
+      </a>
+    </div>
+  </BentoItem>
+</section>

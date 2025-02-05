@@ -1,0 +1,37 @@
+---
+import CandidateSocialLink from "@/components/SocialLink.astro"
+import Typography from "@/components/Typography.astro"
+
+import Facebook from "@/icons/facebook.astro"
+import Instagram from "@/icons/instagram.astro"
+import Tiktok from "@/icons/tiktok.astro"
+import X from "@/icons/x.astro"
+import YouTube from "@/icons/youtube.astro"
+
+
+
+
+---
+<div class="flex flex-col items-center py-8 bg-primary md:mr-24">
+    <Typography as="h3" variant="h3" color="white" class:list={"mb-4 text-center"}>
+        REDES SOCIALES
+    </Typography>
+    <div class="mx-auto flex max-w-[600px] flex-wrap justify-center gap-2 lg:max-w-full">
+        <CandidateSocialLink href={'https://www.facebook.com/Chucho.1523/'}>
+            <Facebook />
+        </CandidateSocialLink>
+        <CandidateSocialLink href={'https://www.instagram.com/jesusrp.15/'}>
+            <Instagram />
+        </CandidateSocialLink>
+        <CandidateSocialLink href={''}>
+            <X />
+        </CandidateSocialLink>
+        <CandidateSocialLink href={''}>
+            <YouTube />
+        </CandidateSocialLink>
+        <CandidateSocialLink href={'https://www.tiktok.com/@jesus_puertos'}>
+            <Tiktok />
+        </CandidateSocialLink>
+    </div>
+</div>
+   

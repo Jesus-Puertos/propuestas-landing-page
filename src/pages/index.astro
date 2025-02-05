@@ -1,10 +1,17 @@
 ---
-import Header from "@/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
+
+import { basics } from "@cv"; // ✅ Importando desde el JSON
+
+import ClipVideoCandidate from "@/components/ClipVideoCandidate.astro";
+
+const { name, label, image, summary, workout, leaders } = basics; 
 ---
 
-<Layout title="Welcome to Astro.">
-  <Header />
+<Layout title={`Pagina del candidato ${name} - ${label}`} >
   <Hero />
+  <ClipVideoCandidate workout={workout}  /> 
+  
+  
 </Layout>
