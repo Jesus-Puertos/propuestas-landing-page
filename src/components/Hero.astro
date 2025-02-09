@@ -1,21 +1,14 @@
 ---
-import Finance from "@/assets/Finance.astro";
 import { basics } from "@cv";
 import CandidateBigImage from "./CandidateBigImage.astro";
-import Typography from "./Typography.astro";
 const {id, name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
-import CandidateSocialLink from "./SocialLink.astro";
-import Facebook from "@/icons/facebook.astro";
-import Instagram from "@/icons/instagram.astro";
-import X from "@/icons/x.astro";
-import Tiktok from "@/icons/tiktok.astro";
-import YouTube from "@/icons/youtube.astro";
+
 import Socials from "./Socials.astro";
 ---
 
 <section
-  class=" mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8"
+  class=" mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8 mt-[-40px] lg:mt-[-80px] "
 >
   <div class="space-y-4 flex-1 sm:text-center lg:text-left">
     <h1 class="text-white font-bold text-4xl xl:text-5xl">
@@ -25,20 +18,20 @@ import Socials from "./Socials.astro";
       {label}
     </h1>
     <p class="max-w-xl text-secondary leading-relaxed sm:mx-auto lg:ml-0">
-      {name} es un candidato a la alcaldía de {city}, {region}. Conoce sus
+      {name} es el pre-candidato a la alcaldía de {city}, {region}. Conoce sus
       propuestas y contacta con él para más información.  
     </p>
     <div
       class="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start"
     >
       <a
-        href="javascript:void(0)"
+        href="/propuestas"
         class="px-7 py-3 w-full bg-slate-100 text-gray-800  hover:scale-105 transition-all text-center rounded-md shadow-md block sm:w-auto"
       >
         Saber más
       </a>
       <a
-        href="javascript:void(0)"
+        href="javascript:console.log('contactar')"
         class="px-7 py-3 w-full bg-black hover:scale-105 transition-all text-white text-center rounded-md block sm:w-auto"
       >
         Contactar

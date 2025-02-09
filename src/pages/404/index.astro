@@ -1,0 +1,27 @@
+---
+import Typography from "@/components/Typography.astro";
+
+
+---
+
+
+<section class="flex items-center justify-center flex-col h-screen space-y-4">
+
+    <img src="/logo-404.png" alt="Logo de movimiento ciudadano 404" class="w-64" />
+
+<Typography as={"h1"} variant={"h1"}  color="orange" >404</Typography>
+    
+
+    <Typography as={"h2"} variant={"h2"}  color="black" >
+        Opps! Pagina no encontrada.
+    </Typography>
+
+    <Typography as={"p"} variant={"body"}  color="black" >
+        Lo sentimos, la pagina que estas buscando no existe o ha sido movida.
+
+    </Typography>
+
+    <Typography as={"a"} variant={"body"}  color="orange" href="/" class:list={`border px-4 py-2   rounded-full border-orange-500 hover:bg-orange-400 hover:transition-all hover:text-white  `} >
+        Regresar a la pagina principal
+    </Typography>
+</section>

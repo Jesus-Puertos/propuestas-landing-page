@@ -1,0 +1,49 @@
+---
+import SectionTitle from "@/components/SectionTitle.astro"
+
+const IMAGES_TO_LOAD = 10
+
+interface Props {
+    id: string
+    name: string
+}
+
+const { id, name } = Astro.props
+---
+
+<section class="my-44">
+    <SectionTitle title="Galería de Fotos" description={`Fotos de ${name}`} />
+
+    <div id="candidate-gallery" class="relative mt-8 grid grid-cols-4 gap-3">
+        {
+            Array.from({ length: IMAGES_TO_LOAD }).map((_, index) => (
+                <figure
+                    class:list={[
+                        "aspect-square transition hover:scale-105 hover:brightness-125",
+                        { "row-span-2": index === 0 },
+                    ]}
+                    data-index={index}
+                    title={`Imagen de la galería del pre-candidato ${name}`}
+                >
+                    <picture class="block h-full w-full">
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            class="aspect-square h-full w-full rounded object-cover object-top"
+                            alt={`Imagen de la galería de fotos de ${name}`}
+                            src={`/img/candidates/gallery/${id}/${index + 1}.jpg`}
+                        />
+                    </picture>
+                </figure>
+            ))
+        }
+        
+    </div>
+</section>
+
+<style>
+    #lightbox img.candidate-gallery-img {
+        view-transition-name: lightbox-image;
+    }
+</style>
+

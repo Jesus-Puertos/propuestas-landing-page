@@ -5,13 +5,15 @@ import Hero from "@/components/Hero.astro";
 import { basics } from "@cv"; // ✅ Importando desde el JSON
 
 import ClipVideoCandidate from "@/components/ClipVideoCandidate.astro";
+import Gallery from "@/components/Gallery.astro";
 
-const { name, label, image, summary, workout, leaders } = basics; 
+const { id,name, label, image, summary, workout, leaders } = basics; 
 ---
 
 <Layout title={`Pagina del candidato ${name} - ${label}`} >
   <Hero />
   <ClipVideoCandidate workout={workout}  /> 
+  <Gallery id={id} name={name} />
   
   
 </Layout>

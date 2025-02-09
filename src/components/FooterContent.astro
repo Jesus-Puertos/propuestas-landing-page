@@ -6,7 +6,7 @@ import Typography from "@/components/Typography.astro";
   <Typography
     as="span"
     variant="body"
-    color="neutral"
+    color="black"
     class:list={"text-center"}
   >
     &copy; {new Date().getFullYear()} Movimiento Ciudadano <span
@@ -15,30 +15,14 @@ import Typography from "@/components/Typography.astro";
     ><br aria-hidden="true" class="block md:hidden" /> Diseño inspirado de <Typography
       as="a"
       variant="body"
-      color="neutral"
+      color="primary"
       class:list="underline"
       href="https://www.lavelada.es/"
     >
       La velada.es
     </Typography>
+    <span>By Midudev</span>
   </Typography>
 
-  <Typography
-    as="a"
-    variant="body"
-    color="neutral"
-    class:list="underline hidden"
-    href="/legal-advice"
-  >
-    Aviso legal
-  </Typography>
-  <Typography
-    as="a"
-    variant="body"
-    color="neutral"
-    class:list="underline hidden"
-    href="/privacy-policy"
-  >
-    Política de privacidad
-  </Typography>
+  
 </div>

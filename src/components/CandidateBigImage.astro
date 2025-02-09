@@ -9,40 +9,41 @@ interface Props {
 
 const { name, id, loading } = Astro.props
 ---
-
-<picture
-	class:list={"candidate-photo aspect-[285/428] h-auto w-full max-w-[460px]"}
-	transition:name="candidate-big-image"
 	
+<picture
+class:list={"candidate-photo aspect-[285/428] h-auto w-full max-w-[460px]"}
+transition:name="candidate-big-image"
+
 >
-	<img
-		decoding="async"
-		class="aspect-[285/428] h-auto w-full object-contain"
-		alt={`Fotografía de ${name}`}
-		src={`/img/candidates/${id}-big.webp`}
-		style="
-			filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
-			mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-		"
-		loading={loading}
-	/>
+<img
+	decoding="async"
+	class="aspect-[285/428] h-auto w-full object-contain"
+	alt={`Fotografía de ${name}`}
+	src={`/img/candidates/${id}-big.webp`}
+	style="
+		filter: drop-shadow(0 0 5px rgba(255, 165, 0, .5));
+		mask-image: linear-gradient(to bottom, orange 80%, transparent 100%);
+	"
+	loading={loading}
+/>
 </picture>
 
 <div
-    class="absolute bottom-[-725px] z-10 flex max-w-md flex-col items-center justify-center text-wrap md:bottom-[-430px]"
-    transition:name="candidate-name"
+class="relative z-10 flex max-w-md flex-col items-center justify-center text-wrap mt-[-110px] lg:mt-[-120px] lg:ml-4"
+transition:name="candidate-name"
 >
 
-	<CandidateTitleName name={name} />
+<CandidateTitleName name={name} />
 
-	<img
-		decoding="async"
-		transition:name="candidate-flag"
-		class:list={"candidate-flag  pointer-events-none aspect-[3/2] h-auto w-28 object-contain object-center"}
-		alt={`Bandera de Movimiento Ciudadano, del candidato ${name}`}
-		src={`/public/img/flags/mc.png`}
-		loading={loading}
-	/>
+<img
+	decoding="async"
+	transition:name="candidate-flag"
+	class:list={"candidate-flag  pointer-events-none aspect-[3/2] h-auto w-48 object-contain object-center"}
+	alt={`Bandera de Movimiento Ciudadano, del candidato ${name}`}
+	src={`/img/flags/mc.png`}
+	loading={loading}
+/>
 </div>
+
 
 <style></style>
